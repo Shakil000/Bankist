@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankist</title>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Customize tailwind CDN -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="lg:max-w-screen-xl lg:mx-auto">
+    <!-- navbar design start -->
+    <section class="mb-28">
+        <nav>
+            <div class="flex justify-between lg:mt-7 mt-5 mx-3">
+                <div>
+                    <img class="lg:h-16 h-7" src="img/logo.png" alt="">
+                </div>
+                <div class="dropdown">
+                    <button><i class="fa-solid fa-bars lg:hidden"></i></button>
+                    <ul class="menu menu-sm dropdown-content mt-3 w-28 p-2 ml-[-100px] font-medium">
+                        <li><a>Features</a></li>
+                        <li><a>Operations</a></li>
+                        <li><a>Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="lg:space-x-4 lg:font-bold lg:block hidden">
+                    <button>Features</button>
+                    <button>Operations</button>
+                    <button>Testimonials</button>
+                    <button class="bg-green-500 rounded-full lg:px-9 lg:h-12 lg:mt-2">Open account</button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Banner Section Design Start -->
+     <section class="mb-60">
+         <div class="lg:grid lg:grid-cols-2 gap-5 px-5">
+            <div class="lg:ml-20 lg:mt-28">
+                <h1 class="lg:text-5xl font-bold">When <span class="bg-green-500 rotate-90">banking </span>meets <span class="bg-green-500 leading-5">minimalist</span></h1>
+                <p class="font-bold py-5 text-xl">A simple banking experience for a simpler life.</p>
+                <a class="text-green-500 font-bold" href="">Learn more <i class="fa-solid fa-arrow-down text-green-500 font-bold"></i></a>
+                <hr class="w-24 border-t-gray-200 border-y-2">
+            </div>
+            <div>
+                <img class="lg:w-96 lg:h-96 lg:ml-48 mt" src="img/hero.png" alt="">
+            </div>
+         </div>
+        <!-- Banner Section Design End -->
+     </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
